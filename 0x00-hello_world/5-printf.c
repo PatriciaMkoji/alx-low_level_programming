@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
- * Write a C program that prints using printf
- * main to return a value
- * return 0
+ * main -  Write a C program that prints using printf
+ * Return: Always 0 (success)
  */
 int main(void)
 {
