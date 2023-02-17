@@ -2,7 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /* more headers goes there */
-
+/**
+ * main - Entry point
+ * Return: 0 (success)
+ */
 /* betty style doc for function main goes there */
 int main(void)
 {
@@ -11,13 +14,11 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* your code goes there */
-	printf("Enter the value of n:");
-	scanf("%d" ,&n);
-	if(n>0)
+	if (n > 0)
 	{
 		printf("is positive");
 	}
-	else if(n==0)
+	else if (n == 0)
 	{
 		printf("is zero");
 	}
