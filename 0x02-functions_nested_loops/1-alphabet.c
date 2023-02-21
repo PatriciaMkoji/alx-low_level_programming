@@ -1,13 +1,14 @@
-#include "main.h"
-
 /**
- * main - check the code
- * Return: Always 0.
+ * main -  prints _putchar, followed by a new line
+ * Return: Always 0 (success)
  */
 int main(void)
 {
-	int i;
-	for( i='a'; i<='z'; i++)
-		_putchar(i);
-    return (0);
+	char c;
+
+	for (c = 'a'; c <= 'z' c++)
+	{_putchar(c);
+	}
+	_putchar('\n');
+	return (0);
 }
