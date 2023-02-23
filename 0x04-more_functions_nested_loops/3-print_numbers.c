@@ -1,10 +1,8 @@
 #include "main.h"
-#include <stdio.h>
-#include <ctype.h>
+
 /**
- * print_number - printd numbers from 0 to 9
- * @i :charcter to be used
- * Return :print of 0 to 9
+ * print_numbers - prints 0-9
+ * Return: number0-9
  */
 
 void print_numbers(void)
@@ -13,7 +11,7 @@ void print_numbers(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		_putchar(i);
+		_putchar(i + '0');
 	}
-	_putchar("\n");
+	_putchar('\n');
 }
