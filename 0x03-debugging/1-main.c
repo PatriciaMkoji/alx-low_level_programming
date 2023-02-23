@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
-* main - causes an infinite loop - has no increment / decrement argument
+* main - causes an infinite loop 
+* @i: has no increment / decrement argument
 * Return: 0
 */
 
