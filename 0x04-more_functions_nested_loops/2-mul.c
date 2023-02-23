@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  * mul - a function that multiplies 2 digits
  * @a :to be multiplied
@@ -11,8 +10,7 @@
 int mul(int a, int b)
 {
 	int  mul;
-	
-	mul = (a * b);
 
+	mul = (a * b);
 	return (mul);
 }
