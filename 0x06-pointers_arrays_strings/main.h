@@ -16,5 +16,6 @@ char *add_strings(char *n1, char *n2, char *r, int r_index);
 char *infinite_add(char *n1, char *n2, char *r, int size_r);
 void print_buffer(char *b, int size);
 char *cap_string(char *);
+char *leet(char *);
 
 #endif
