@@ -1,18 +1,16 @@
-#include <stdio.h>
 #include "dog.h"
+#include <stdlib.h>
 
 /**
- * main - check the code for ALX School students.
- *
- * Return: Always 0.
+ * free_dog - Frees dogs.
+ * @d: The dog to be freed.
  */
-int main(void)
+void free_dog(dog_t *d)
 {
-    dog_t *my_dog;
+	if (d == NULL)
+		return;
 
-    my_dog = new_dog("Poppy", 3.5, "Bob");
-    printf("My name is %s, and I am %.1f :) - Woof!\n", my_dog->name, my_dog->age);
-    free_dog(my_dog);
-    return (0);
+	free(d->owner);
+	free(d->name);
+	free(d);
 }
-
