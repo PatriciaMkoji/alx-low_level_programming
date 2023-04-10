@@ -14,7 +14,7 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	char ch;
-	FILE *savefile;
+	FILE *file;
 	ssize_t tot_read = 0;
 
 	if (filename == NULL)
@@ -22,42 +22,26 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	savefile = fopen(filename, "r");
+	file = fopen(filename, "r");
 
-	if (savefile == NULL)
+	if (file == NULL)
 	{
 		return (0);
 	}
 
-	ch = fgetc(savefile);
+	ch = fgetc(file);
 	while (ch != EOF && letters > 0)
 	{
 		if (putchar(ch) == EOF)
 		{
-			fclose(savefile);
+			fclose(file);
 			return (0);
 		}
 		tot_read++;
 		letters--;
-		ch = fgetc(savefile);
+		ch = fgetc(file);
 	}
-	fclose(savefile);
+	fclose(file);
 
 	return (tot_read);
-}
-
-#include <unistd.h>
-#include "main.h"
-
-/**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
-
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
