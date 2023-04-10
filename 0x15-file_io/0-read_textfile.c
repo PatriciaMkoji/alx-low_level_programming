@@ -34,7 +34,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	{
 		if (putchar(ch) == EOF)
 		{
-			fclose(file);
 			return (0);
 		}
 		tot_read++;
