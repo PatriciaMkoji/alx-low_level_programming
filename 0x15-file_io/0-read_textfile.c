@@ -28,7 +28,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	if (savefile == NULL)
 	{
-		printf("File not created");
+		return (0);
 		exit(1);
 	}
 
