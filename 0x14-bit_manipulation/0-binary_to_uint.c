@@ -5,17 +5,28 @@
  * @b: pointer to string of 0 and 1 char
  * Return: the converted number
  */
+
 unsigned int binary_to_uint(const char *b)
 {
-	int i;
-	unsigned int binnum;
+	unsigned int binint = 0;
+	int i = 0;
 
-	binnum = 0;
-
-	for (i = 0; b[i] != '\0'; i++)
+	if (b == NULL)
 	{
-		binnum <<= 1;
-		binnum += (b[i] - '0');
+		return (0);
 	}
-	return (binnum);
+	while (b[i] != '\0')
+	{
+		if (b[i] == '0' || b[i] == '1')
+		{
+			binint <<= 1;
+			binint += b[i] - '0';
+		}
+		else
+		{
+			return (0);
+		}
+		i++;
+	}
+	return (binint);
 }
