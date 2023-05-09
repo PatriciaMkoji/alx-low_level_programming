@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 		print_error("Error: Can't write to %s\n", file_to, 99);
 	while ((readn = read(fd_from, buffer, BUFFZ)) > 0)
 	{
-		writn = write(fild_to, buffer, readn);
+		writn = write(fd_to, buffer, readn);
 		if (writn != readn)
 			print_error("Error: Can't write to %s\n", file_to, 99);
 	}
