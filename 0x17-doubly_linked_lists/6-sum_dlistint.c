@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
- * sum_dlistint - will returns the sum of all the data 
+ * sum_dlistint - will returns the sum of all the data
  * @head: will point to the head of the list
  * Return: e the sum of all the data in the list & 0 if empty
- */ 
+ */
 int sum_dlistint(dlistint_t *head)
 {
 	int summation = 0;
@@ -16,6 +16,5 @@ int sum_dlistint(dlistint_t *head)
 		current_node = current_node->next;
 	}
 
-	return summation;
+	return (summation);
 }
-
