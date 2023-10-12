@@ -1,10 +1,10 @@
 #include "search_algos.h"
 
 /**
- * print_array_new - print 
- * @array: pointer to the first element of the array to search in 
- * @left: min 
- * @right: max 
+ * print_array_new - print
+ * @array: pointer to the first element of the array to search in
+ * @left: min
+ * @right: max
  * Return: Nothing
  */
 void print_array_new(int *array, int left, int right)
@@ -54,10 +54,10 @@ int recursive_search(int *array, int low, int high, int value)
 
 /**
  * advanced_binary - seacrh
- * @array:  pointer to the first element of the array to search in 
+ * @array:  pointer to the first element of the array to search in
  * @size: size
  * @value: value
- * Return: The index 
+ * Return: The index
  */
 int advanced_binary(int *array, size_t size, int value)
 {
