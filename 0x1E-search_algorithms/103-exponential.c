@@ -29,7 +29,7 @@ int exponential_search(int *array, size_t size, int value)
 }
 
 /**
- * binary_search - binary search 
+ * binary_search - binary search
  * @array: pointer to the first element of the array to search in
  * @size: number of elements in array
  * @value: value to search for
